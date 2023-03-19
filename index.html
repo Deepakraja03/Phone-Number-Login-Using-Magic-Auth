@@ -5,13 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- 1️⃣ Install Magic SDK -->
     <script src="https://auth.magic.link/sdk"></script>
     <script>
-      /* 2️⃣ Initialize Magic Instance */
       let magic = new Magic("pk_live_618172E459A7A9D9");
-
-      /* 3️⃣ Implement Render Function */
       const render = async () => {
         const isLoggedIn = await magic.user.isLoggedIn();
 
